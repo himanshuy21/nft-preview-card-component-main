@@ -1,0 +1,122 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 18px;
+}
+
+/* css reset   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Very-dark-blue1);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card container css  */
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background: var(--Very-dark-blue2);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.img_card-container{
+   position: relative;
+   cursor: pointer;
+   border-radius: 20px;
+   margin: 20px 20px;
+   height: 250px;
+   width: 250px;
+}
+.img_card-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.detail_card-container{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.name{
+    padding-bottom: 10px;
+}
+
+.info{
+    color: var(--Very-dark-blue1s);
+    padding-bottom: 10px;
+}
+
+.flex_price{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    color: var(--Soft-blue);
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+    color: var(--Very-dark-blue3);
+}
+
+.author{
+    display: flex;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.author img{
+    height: 30px;
+    width: 30px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+.author_name{
+    padding-top: 5px ;
+    padding-left: 10px;
+}
+
+.attribution{
+    padding-bottom: 12px;
+    font-size: 10px;
+}
+
+.overlay{
+    position: absolute;
+    background-color: var(--Cyan);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border-radius: 5px ;
+    display: none;
+  }
+  
+.btn{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    display: none;
+    z-index: 10;
+    border-radius: 5px ;
+}
+
